@@ -13,7 +13,7 @@
     "url": "git@github.com:alchimya/micro-node-service-registry-lib.git"
   },
   "dependencies": {
-    "micro-node-mongo-lib":"git@github.com:alchimya/micro-node-mongo-lib.git"
+    "micro-node-mongo-lib": "github:blankcry/micro-node-mongo-lib"
   },
   "private": true
 }
