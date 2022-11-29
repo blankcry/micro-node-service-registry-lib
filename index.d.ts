@@ -4,7 +4,8 @@ declare module 'micro-node-service-registry-lib' {
   export interface ServiceRegistry {
     register(object: object, callback: (error: Error, param: ServiceAttributes) => void): void;
     unregister(id: string, name: string, callback: (error: Error, param: ServiceAttributes) => void): void;
-    find(name: string, endpoint: string): Promise<ServiceAttributes>;
+    find(name: string, endpointId: string): Promise<ServiceAttributes>;
+    findViaEndpointId(endpointId: string): Promise<ServiceAttributes>;
   }
 
   interface ServiceAttributes {
